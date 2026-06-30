@@ -1,7 +1,7 @@
 
 export interface LinkProps {
     url: string
-    title: string | "Git"
+    title: string
 }
 const Link = ({ url, title }: LinkProps) => {
 
