@@ -54,7 +54,7 @@ The project has been audited using **axe DevTools** and achieved a flawless scor
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/your-username/social-links.git](https://github.com/your-username/social-links.git)
+   git clone https://github.com/rebecafloriano/social-links
 
 2. Install dependencies: 
 
