@@ -58,12 +58,12 @@ The project has been audited using **axe DevTools** and achieved a flawless scor
 
 2. Install dependencies: 
 
-  `npm install`
+   `npm install`
 
 
 3. Run the development server:
 
-  `npm run dev`
+   `npm run dev`
 
 
 ## 🔬 Available Commands
