@@ -2,7 +2,7 @@
 
 A highly responsive and performant application developed to consolidate modern Frontend development practices, quality engineering, and digital accessibility.
 
-![Project Demonstration](./preview.jpeg)
+<img src="./preview.jpeg" alt="Project Demonstration" width="400" />
 
 ## 🔗 Project Link
 👉 **[Live Application](https://social-links-snowy-three.vercel.app/)**
@@ -41,9 +41,9 @@ Powered by **GitHub Actions**, every `push` or `pull_request` triggers a tempora
 
 The project has been audited using **axe DevTools** and achieved a flawless score of **0 accessibility issues (Total Issues: 0)**, strictly complying with international **WCAG 2.1 AA** guidelines:
 
-![axe DevTools Report - 0 Issues](./axeDevTools.png)
+<img src="./axeDevTools.png" alt="axe DevTools Report - 0 Issues" width="500" />
 
-- **Semantic Structure:** Strict use of semantic HTML tags (`<main>`, `<nav>`, `<a>`).
+- **Semantic Structure:** Strict use of semantic HTML tags (`<main>`, `<a>`).
 - **Keyboard Navigation:** Full support for users navigating without a mouse, using highly visible and clear focus rings (`focus:outline`).
 - **Security & SEO:** Appropriate security attributes applied to all external links (`rel="noreferrer"`).
 - **Contrast:** Validated color contrast ratios, ensuring optimal readability for users with low vision.
@@ -56,15 +56,18 @@ The project has been audited using **axe DevTools** and achieved a flawless scor
    ```bash
    git clone [https://github.com/your-username/social-links.git](https://github.com/your-username/social-links.git)
 
-2. Install dependencies:
-  ```bash
-  npm install
+2. Install dependencies: 
+
+  `npm install`
+
 
 3. Run the development server:
-  ```bash
-  npm run dev
+
+  `npm run dev`
+
 
 ## 🔬 Available Commands
+
 `npm run lint`: Runs static analysis via ESLint.
 
 `npm run lint:fix`: Automatically fixes formatting and style deviations.
