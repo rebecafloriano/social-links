@@ -1,75 +1,74 @@
-# React + TypeScript + Vite
+# 🌐 Social Links Profile
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A highly responsive and performant application developed to consolidate modern Frontend development practices, quality engineering, and digital accessibility.
 
-Currently, two official plugins are available:
+![Project Demonstration](./preview.jpeg)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🔗 Project Link
+👉 **[Live Application](https://social-links-snowy-three.vercel.app/)**
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🚀 Technologies Used
 
-## Expanding the ESLint configuration
+- **React 18 & TypeScript** — Strongly typed, reliable component architecture.
+- **Tailwind CSS** — Utility-first styling and fluid responsive design.
+- **Vitest & React Testing Library (RTL)** — Automated testing suite.
+- **ESLint & Prettier** — Quality Gates enforcing strict code consistency and style standards.
+- **GitHub Actions** — Continuous Integration (CI) pipeline.
+- **Vercel** — Automated deployment synced seamlessly with the repository.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Engineering Practices & Quality Gates
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+To ensure code robustness and maintainability, this project implements a strict quality pipeline:
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### ⚙️ Linters and Formatting
+Code is statically analyzed using **ESLint** coupled with **Prettier**. This setup intercepts potential bugs (such as unused variables or orphaned imports) instantly and ensures that code indentation remains rigorously standardized.
 
-```
+### 🧪 Automated Testing
+The testing suite covers different levels of the application:
+- **Unit Testing:** Isolated component validation (e.g., verifying props, links, and security attributes on the `<Link />` component).
+- **Integration Testing:** Assuring that the entire component tree (e.g., `<App />` managing multiple `<Link />` components) interacts and renders the application state correctly.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 🛡️ Continuous Integration (CI)
+Powered by **GitHub Actions**, every `push` or `pull_request` triggers a temporary Linux virtual environment that installs dependencies, executes the linter (`npm run lint`), and runs the test suite (`npm run test -- --run`). Production deployments are only updated if the code passes through this quality gate undefeated.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## ♿ Accessibility (a11y)
 
-```
+The project has been audited using **axe DevTools** and achieved a flawless score of **0 accessibility issues (Total Issues: 0)**, strictly complying with international **WCAG 2.1 AA** guidelines:
+
+![axe DevTools Report - 0 Issues](./axeDevTools.png)
+
+- **Semantic Structure:** Strict use of semantic HTML tags (`<main>`, `<nav>`, `<a>`).
+- **Keyboard Navigation:** Full support for users navigating without a mouse, using highly visible and clear focus rings (`focus:outline`).
+- **Security & SEO:** Appropriate security attributes applied to all external links (`rel="noreferrer"`).
+- **Contrast:** Validated color contrast ratios, ensuring optimal readability for users with low vision.
+
+---
+
+## 📦 Local Setup and Installation
+
+1. Clone the repository:
+   ```bash
+   git clone [https://github.com/your-username/social-links.git](https://github.com/your-username/social-links.git)
+
+2. Install dependencies:
+  ```bash
+  npm install
+
+3. Run the development server:
+  ```bash
+  npm run dev
+
+## 🔬 Available Commands
+`npm run lint`: Runs static analysis via ESLint.
+
+`npm run lint:fix`: Automatically fixes formatting and style deviations.
+
+`npm run format`: Formats all project files using Prettier.
+
+`npm run test`: Launches Vitest in watch mode.
